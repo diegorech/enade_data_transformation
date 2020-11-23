@@ -178,7 +178,7 @@ print(f'{round((enade_df.DESC_PUBLICA.value_counts() / enade_df.shape[0]) * 100,
     Para acessarmos uma coluna dentro do dataframe utilizamos a sintaxe de dataframe.nome_da_coluna 
 '''
 
-enade_df['CO_MODADELIDADE'] = enade_df.CO_MODALIDADE.replace({
+enade_df['CO_MODALIDADE'] = enade_df.CO_MODALIDADE.replace({
     0: 'EAD',
     1: 'Presencial'
 })
